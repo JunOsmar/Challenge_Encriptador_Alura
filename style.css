@@ -1,0 +1,252 @@
+body {
+    background-color: #E9ECF8;
+}
+
+main {
+    text-align: center;
+    margin: 0;
+}
+
+.titulo {
+    color: darkblue;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 50px 10px;
+}
+
+.quadro {
+    text-align: center;
+    display: inline-block;
+    padding: 20px;
+    width: 70%;
+    height: 600px;
+    margin: 20px auto;
+}
+
+.inputTxt {
+    font-size: 20px;
+    background-color: #E9ECF8;
+    border: solid darkblue 1px;
+    border-radius: 24px;
+    width: 328px;
+    padding: 10px;
+    color: darkblue;
+}
+
+.linha {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    color: darkblue;
+    font-size: 20px;
+}
+
+.botoes {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    gap: 8px;
+}
+
+.campoObs {
+    text-align: center;
+    font-size: 20px;
+    display: block;
+    color: gray;
+    margin: 0 0 5px 0;
+}
+
+.botaoCodificar {
+    display: inline-block;
+    background-color: darkblue;
+    color: white;
+    font-size: 20px;
+    width: 328px;
+    padding: 24px;
+    border-radius: 24px;
+    padding: auto 20px;
+    border: solid darkblue 1px;
+    font-weight: bold;
+}
+
+.botaoDecodificar {
+    display: inline-block;
+    background-color: lightblue;
+    color: darkblue;
+    font-size: 20px;
+    width: 328px;
+    padding: 24px;
+    border-radius: 24px;
+    padding: auto 20px;
+    border: solid darkblue 1px;
+    font-weight: bold;
+}
+
+.quadro2 {
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 20px;
+    width: 20%;
+    height: 500px;
+    vertical-align: top;
+    margin: 20px auto;
+}
+
+.imagem {
+    text-align: center;
+}
+
+.quadro2 h2 {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.esconder {
+    display: none;
+    text-align: center;
+}
+
+.mostrar {
+    display: "";
+    text-align: center;
+}
+
+.botaoResetarCopiar {
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+    font-size: 20px;
+    width: 40%;
+    padding: 24px 20px;
+    border-radius: 24px;
+    padding: auto 20px;
+    border: solid darkblue 1px;
+    font-weight: bold;
+}
+
+.divResetar {
+    padding-top: 20px;
+    display: block;
+    text-align: center;
+}
+
+@media screen and (max-width:480px) {
+    .quadro {
+        display: block;
+        width: auto;
+        height: 200px;
+        padding: 0;
+        margin-bottom: 150px;
+    }
+    .quadro2 {
+        display: block;
+        width: 80%;
+        background-color: white;
+        height: auto;
+        margin: 5px auto;
+        padding: 0;
+    }
+    .inputTxt {
+        font-size: 20px;
+        width: 70%;
+        text-align: center;
+        margin: 5px auto;
+    }
+    .quadro2 h2 {
+        display: block;
+        margin: 20px auto;
+        padding: 20px;
+    }
+    .imagem {
+        display: none;
+    }
+    .linha {
+        font-size: 30px;
+        display: block;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    .botoes {
+        position: static;
+        display: block;
+        width: 100%;
+        margin: 50px auto;
+    }
+    .botaoCodificar,
+    .botaoDecodificar,
+    .botaoResetarCopiar {
+        width: 75%;
+        height: 40px;
+        padding: 0;
+        margin: 5px auto;
+        font-size: 20px;
+    }
+}
+
+.campoObs {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .quadro {
+        display: block;
+        width: auto;
+        height: 800px;
+        padding: 0;
+        margin-bottom: 150px;
+    }
+    .quadro2 {
+        display: block;
+        width: 80%;
+        background-color: white;
+        height: auto;
+        margin: 5px auto;
+        padding: 0;
+    }
+    .inputTxt {
+        font-size: 30px;
+        width: 70%;
+        text-align: center;
+        margin: 5px auto;
+    }
+    .quadro2 h2 {
+        font-size: 30px;
+        display: block;
+        margin: 20px auto;
+        padding: 20px;
+    }
+    .imagem {
+        display: none;
+    }
+    .linha {
+        font-size: 30px;
+        display: block;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    .botoes {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        margin: 100px auto;
+    }
+    .botaoCodificar,
+    .botaoDecodificar,
+    .botaoResetarCopiar {
+        width: 75%;
+        height: 60px;
+        padding: 0;
+        margin: 5px auto;
+        font-size: 30px;
+    }
+    .campoObs {
+        font-size: 30px;
+    }
+}

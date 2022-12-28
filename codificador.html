@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Codificador</title>
+    <link href="reset.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- titulo -->
+    <header>
+        <h1 class="titulo">Codificador de Textos SPY1!</h1>
+    </header>
+
+    <main>
+        <!-- Quadro de entrada de dados e codificação -->
+        <div class="quadro">
+
+            <!-- Input -->
+            <label class="linha" for="codificar">Digite seu texto</label><br>
+            <input class="inputTxt" type="text" name="f_txt" id="f_itxt"></input>
+
+            <div class="botoes">
+                <!-- Oberservação -->
+                <div class="campoObs">
+                    <p class="observacao">&#9432; Apenas letras minúsculas e sem acento.</p>
+                </div>
+
+                <!-- Botoes codificar e decodificar -->
+                <button class="botaoCodificar" onclick="codificar()">Codificar</button>
+                <button class="botaoDecodificar" onclick="decodificar()">Decodificar</button>
+
+            </div>
+        </div>
+
+        <!-- Quadro dos resultados -->
+        <div class="quadro2">
+            <!-- Imagem -->
+            <img class="imagem" src="detetive.jpg" width="50%">
+
+            <!-- Mensagem -->
+            <div class="mostrar" id="nenhumTexto">
+                <h2 class="linha">Nenhuma mensagem encontrada</h2>
+                <p class="linha">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+
+            <!-- Resultados da codificação e decodificação -->
+            <div class="esconder" id="textoEncontrado">
+                <h2 class="linha">A mensagem encontrada foi:</h2>
+                <p class="linha" id="mostrador"></p>
+
+                <!-- Botões para resetar a aplicação e copiar o resultado -->
+                <div class="divResetarCopiar">
+                    <button class="botaoResetarCopiar" onclick="resetarPagina()">Resetar</button>
+                    <button class="botaoResetarCopiar" onclick="copiar()" id="btnCopiar">Copiar</button>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
